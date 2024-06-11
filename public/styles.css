@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: #008080;
+}
+
+h1 {
+  margin-top: 0;
+  padding: 5px;
+  color: #eeeeee;
+  background-color: #333333;
+  font-size: 2.2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.5rem;
+  margin-right: 1rem;
+}
+
+.nav-items {
+  border-top: 0;
+  margin-top: 0;
+  color: #eeeeee;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.post {
+  color: #333333;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.35rem;
+  padding-bottom: 1.1rem;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Georgia", serif;
+}
+
+.post-item {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.form input[type="text"] {
+  display: block;
+  background-color: #eeeeee;
+  width: 50%;
+  color: #333333;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form input[type="content"] {
+  display: block;
+  background-color: #eeeeee;
+  width: 80%;
+  color: #333333;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form button[type="submit"] {
+  display: block;
+  background-color: #eeeeee;
+  color: #333333;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 200px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+  display: block;
+  color: #eeeeee;
+  background-color: #333333;
+}
+
+.return {
+  background-color: #eeeeee;
+  color: #333333;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.35rem;
+  padding: 1px;
+  border: 3px transparent solid;
+  border-radius: 4px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Georgia", serif;
+}
+
+.return:hover {
+  background-color: #333333;
+  color: #eeeeee;
+}
+
+.post-list {
+  margin-top: 30px;
+}

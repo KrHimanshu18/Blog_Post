@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/post-edit" method="POST">
+      <input type="text" name="title" placeholder="Title" required />
+      <textarea name="content" placeholder="Content" required>
+        <%= post.content %>
+      </textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <a href="/">Back to Home</a>
+  </body>
+</html>
