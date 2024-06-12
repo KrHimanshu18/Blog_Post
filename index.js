@@ -1,10 +1,14 @@
 import express from "express";
 import bodyParser from "body-parser";
+import methodOverride from "method-override";
+
 const app = express();
+const port = 3000;
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
+app.use(methodOverride("_method"));
 
 let posts = [];
 let flag = true;
@@ -54,6 +58,12 @@ app.post("/post-edit", (req, res) => {
   res.redirect("/");
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.delete("/post/:id", (req, res) => {
+  const postId = req.params.id;
+  posts.splice(postId, 1);
+  res.redirect("/");
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

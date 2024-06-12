@@ -3,15 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <form action="/post-edit" method="POST">
-      <input type="text" name="title" placeholder="Title" required />
-      <textarea name="content" placeholder="Content" required>
+    <form class="form" action="/post-edit" method="POST">
+      <!-- <input type="text" name="title" placeholder="Title" required /> -->
+      <textarea
+        class="title-container"
+        name="title"
+        placeholder="Title"
+        required
+      >
+        <%= post.title %>
+      </textarea>
+      <textarea
+        class="content-container"
+        name="content"
+        placeholder="Content"
+        required
+      >
         <%= post.content %>
       </textarea>
       <button type="submit">Submit</button>
     </form>
-    <a href="/">Back to Home</a>
+    <a class="return" href="/">Back to Home</a>
   </body>
 </html>
